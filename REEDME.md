@@ -14,18 +14,18 @@
 
 ## Установка
 `
-    pip install requirements.txt
+    pip install -r requirements.txt
 `
 
 `
     alembic init alembic
 `
 
-заменить файл содержимое alembic/env на содержимое на /env_to_env
+заменить содержимое alembic/env на содержимое на /env_to_env
 
 в файле alembic.ini заменить
 
- строку:  `#sqlalchemy.url = driver://user:pass@localhost/dbname`
+ строку № 63:  `sqlalchemy.url = driver://user:pass@localhost/dbname`
 
  на строку: `sqlalchemy.url = sqlite:///app.db`
 
@@ -38,13 +38,13 @@
 `
 ## Использование
 
-python .\test_app.py -read 'path/to/xlsx/filename.xlsx'
+`python .\test_app.py -read 'path/to/xlsx/filename.xlsx'`
 
-*пути должны быть абсолютные
+пути должны быть абсолютные
 
 ## Функции и возможности
 
 удаление всех записей из таблицы
 
-python .\test_app.py -drop
+`python .\test_app.py -drop`
 
