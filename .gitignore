@@ -1,0 +1,5 @@
+alembic*
+__pycache__*
+app.db
+.idea*
+*.xlsx
