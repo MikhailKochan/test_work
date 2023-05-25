@@ -15,6 +15,9 @@
 ## Установка
 `
     pip install requirements.txt
+`
+
+`
     alembic init alembic
 `
 
